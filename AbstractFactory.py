@@ -18,7 +18,7 @@ class AbstractFactory(metaclass=abc.ABCMeta):
         pass
 
 
-class ConcreteFactory1(AbstractFactory):
+class Concrete_Outfit_Factory(AbstractFactory):
 
     def getSpecificType(self):
         print('I PRODUCE OUTFITS')
@@ -30,7 +30,7 @@ class ConcreteFactory1(AbstractFactory):
         return 'Making Jeans'
 
 
-class ConcreteFactory2(AbstractFactory):
+class Concrete_Automotive_Factory(AbstractFactory):
 
     def getSpecificType(self):
         print('I PRODUCE AUTOMOTIVE')
@@ -43,7 +43,7 @@ class ConcreteFactory2(AbstractFactory):
 
 
 def main():
-    for factory in (ConcreteFactory1(), ConcreteFactory2()):
+    for factory in (Concrete_Outfit_Factory(), Concrete_Automotive_Factory()):
         print('\n')
         print(type(factory).__bases__)
         factory.getType()
