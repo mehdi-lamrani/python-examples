@@ -1,0 +1,5 @@
+f, * a, l = range(100)
+print(f)
+print(sum(a))
+print (a)
+print(l)
