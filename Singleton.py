@@ -16,8 +16,11 @@ class Config:
 config_1 = Config()
 print (config_1.confname)
 
-##config_2 = Config()
-##print (config_2.confname)
+config_2 = Config()
+print (config_2.confname)
 
-#config_2.confname = "My Name is Lict, Conf Lict"
-#print (config_1.confname)
+print('\n')
+
+config_2.confname = "My Name is Lict, Conf Lict"
+print ('CONF 1 : ' + config_1.confname)
+print ('CONF 2 : ' + config_2.confname)
