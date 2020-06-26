@@ -22,11 +22,11 @@ class Loader():
         return __loader(data)
   
     def _load_csv(self, data):
-        print ('LOADING CSV READER for ' + self.filename)
+        print ('\nLOADING CSV READER for ' + data)
         #return pd.read_csv(data)
 
     def _load_xlsx(self, data):
-        print ('LOADING XL READER' + self.filename)
+        print ('\nLOADING XL READER for ' + data)
         #return pd.read_excel(data)
   
 loader = Loader()
