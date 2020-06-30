@@ -1,10 +1,10 @@
 # test_capitalize.py
 
 def capital_case(str):
-    return str.capitalize()
+    return str.upper()
 
 def upper_case(str):
-    return str.upper()
+    return str.capitalize()
 
 def test_capital_case():
     assert capital_case('semaphore') == 'Semaphore'

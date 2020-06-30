@@ -3,7 +3,6 @@ import pandas as pd
 
 class Loader():
 
-
     def __init__(self):
         self.filename = 'None'
 
