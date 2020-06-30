@@ -1,3 +1,5 @@
+import copy
+
 class Arr(object):
     def __init__(self, arr):
         self._arr = arr
@@ -12,7 +14,7 @@ class Arr(object):
 
 
 x = Arr(['a','b','c'])
-y = x
+y = copy.copy(x)
 y.arr = ['e','f','g']
 
 print('\nY IS X ? ' + str(y is x))

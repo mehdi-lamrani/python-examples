@@ -41,6 +41,9 @@ class Concrete_Automotive_Factory(AbstractFactory):
     def create_product_b(self):
         return 'Making Trucks'
 
+    def create_product_c(self):
+        return 'Making Bicyles'
+
 
 def main():
     for factory in (Concrete_Outfit_Factory(), Concrete_Automotive_Factory()):
